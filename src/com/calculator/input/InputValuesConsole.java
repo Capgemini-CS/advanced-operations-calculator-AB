@@ -2,6 +2,7 @@ package com.calculator.input;
 
 import com.calculator.exception.IncorrectInputException;
 import com.calculator.input.validation.InputValidation;
+import org.tinylog.Logger;
 
 import java.util.Scanner;
 
@@ -31,7 +32,7 @@ public class InputValuesConsole implements InputValuesInterface {
                 return null;
             }
         } catch (IncorrectInputException e) {
-            e.printStackTrace();
+            Logger.error("Incorrect input operator.");
         }
         return this.operator;
     }

@@ -4,6 +4,7 @@ import com.calculator.exception.DivisionByZeroException;
 import com.calculator.exception.IncorrectInputException;
 import com.calculator.exception.InvalidIndexException;
 import com.calculator.exception.NotEnoughOperatorsException;
+import org.tinylog.Logger;
 
 import java.util.ArrayList;
 
@@ -29,7 +30,7 @@ public class InputValidation {
         try {
             number =  Integer.parseInt(value);
         } catch (NumberFormatException e) {
-            System.out.println("The value is not numeric.");
+            Logger.error("The value is not numeric.");
         }
         return number;
     }
@@ -40,14 +41,5 @@ public class InputValidation {
         }
         return true;
     }
-
-    public static boolean isIndexValid(int index) throws InvalidIndexException {
-        if(index > 3){
-            throw new InvalidIndexException("Given index is greater than total number of operators from input file.");
-        }
-        return true;
-    }
-
-
 
 }

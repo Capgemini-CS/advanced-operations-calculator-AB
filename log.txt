@@ -1,0 +1,25 @@
+ERROR: The division is not possible because second number is equals to zero.
+ERROR: The division is not possible because second number is equals to zero.
+ERROR: com.calculator.exception.DivisionByZeroException: The division is not possible because second number is equals to zero.
+	at com.calculator.input.validation.InputValidation.numberIsNotZero(InputValidation.java:25)
+	at com.calculator.operations.Division.calculate(Division.java:13)
+	at com.calculator.Calculator.executeOperation(Calculator.java:37)
+	at com.calculator.menu.CalculatorMenu.equationResultForChosenInputMethod(CalculatorMenu.java:38)
+	at com.calculator.menu.CalculatorMenu.show(CalculatorMenu.java:21)
+	at com.calculator.Calculator.main(Calculator.java:15)
+ERROR: The division is not possible because second number is equals to zero.
+ERROR: com.calculator.exception.DivisionByZeroException: The division is not possible because second number is equals to zero.
+	at com.calculator.input.validation.InputValidation.numberIsNotZero(InputValidation.java:25)
+	at com.calculator.operations.Division.calculate(Division.java:13)
+	at com.calculator.Calculator.executeOperation(Calculator.java:37)
+	at com.calculator.menu.CalculatorMenu.equationResultForChosenInputMethod(CalculatorMenu.java:38)
+	at com.calculator.menu.CalculatorMenu.show(CalculatorMenu.java:21)
+	at com.calculator.Calculator.main(Calculator.java:15)
+INFO: Multiply 5 by 8.
+ERROR: com.calculator.exception.DivisionByZeroException: The division is not possible because second number is equals to zero.
+	at com.calculator.input.validation.InputValidation.numberIsNotZero(InputValidation.java:25)
+	at com.calculator.operations.Division.calculate(Division.java:13)
+	at com.calculator.Calculator.executeOperation(Calculator.java:37)
+	at com.calculator.menu.CalculatorMenu.equationResultForChosenInputMethod(CalculatorMenu.java:38)
+	at com.calculator.menu.CalculatorMenu.show(CalculatorMenu.java:21)
+	at com.calculator.Calculator.main(Calculator.java:15)
