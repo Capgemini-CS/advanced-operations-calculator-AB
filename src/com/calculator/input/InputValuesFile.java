@@ -2,6 +2,7 @@ package com.calculator.input;
 
 import com.calculator.exception.IncorrectInputException;
 import com.calculator.input.validation.InputValidation;
+import org.tinylog.Logger;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -18,8 +19,8 @@ public class InputValuesFile implements InputValuesInterface {
         try {
             firstNumber = extractNumberFromStringAtIndex(0, 0);
         } catch (IOException e) {
-            //TODO Logger.error
-            throw new IncorrectInputException("Input is incorrect!");
+            Logger.error("Incorrect input");
+            throw new IncorrectInputException("Incorrect input.");
         }
         return firstNumber;
     }
@@ -30,8 +31,8 @@ public class InputValuesFile implements InputValuesInterface {
         try {
             secondNumber = extractNumberFromStringAtIndex(0, 1);
         } catch (IOException e) {
-            e.printStackTrace();
-            throw new IncorrectInputException("Input is incorrect!");
+            Logger.error("Incorrect input");
+            throw new IncorrectInputException("Incorrect input.");
         }
         return secondNumber;
     }
@@ -42,9 +43,8 @@ public class InputValuesFile implements InputValuesInterface {
         try {
             operator = extractStringAtIndex(0, 2);
         } catch (IOException e) {
-            e.printStackTrace();
-            throw new IncorrectInputException("Input is incorrect!");
-
+            Logger.error("Incorrect input");
+            throw new IncorrectInputException("Incorrect input.");
         }
         return operator;
     }
@@ -68,14 +68,13 @@ public class InputValuesFile implements InputValuesInterface {
         BufferedReader bufferedReader = null;
         String line;
         ArrayList<String> inputFileLines = new ArrayList<>();
-
         try {
             bufferedReader = new BufferedReader(fileReader);
             while ((line = bufferedReader.readLine()) != null) {
                 inputFileLines.add(line);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Logger.error("Incorrect input");
         } finally {
             if (bufferedReader != null) {
                 bufferedReader.close();

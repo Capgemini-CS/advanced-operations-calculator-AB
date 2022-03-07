@@ -8,6 +8,7 @@ import com.calculator.input.InputValuesConsole;
 import com.calculator.input.InputValuesFile;
 import com.calculator.output.ShowOutputOnConsole;
 import com.calculator.output.ShowOutputOnFile;
+import org.tinylog.Logger;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -19,7 +20,7 @@ public class CalculatorMenu implements CalculatorMenuInterface {
         try {
             chooseOutputMethod(equationResultForChosenInputMethod());
         } catch (IncorrectInputException | DivisionByZeroException | NotEnoughOperatorsException | IOException e) {
-            e.printStackTrace();
+            Logger.error(e);
         }
     }
 
