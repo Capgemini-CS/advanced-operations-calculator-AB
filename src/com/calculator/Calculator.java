@@ -12,7 +12,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         CalculatorMenu calculatorMenu = new CalculatorMenu();
-        calculatorMenu.show();
+        calculatorMenu.displayMenu();
     }
 
     public static float executeOperation(int firstNumber, int secondNumber, String operator) throws DivisionByZeroException {

@@ -8,9 +8,9 @@ import java.util.Scanner;
 
 public class InputValuesConsole implements InputValuesInterface {
     static Scanner scanner = new Scanner(System.in);
-    int firstNumber;
-    int secondNumber;
-    String operator;
+    private int firstNumber;
+    private int secondNumber;
+    private String operator;
 
     @Override
     public int getInputValueFirstNumber()  {
