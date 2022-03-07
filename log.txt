@@ -23,3 +23,8 @@ ERROR: com.calculator.exception.DivisionByZeroException: The division is not pos
 	at com.calculator.menu.CalculatorMenu.equationResultForChosenInputMethod(CalculatorMenu.java:38)
 	at com.calculator.menu.CalculatorMenu.show(CalculatorMenu.java:21)
 	at com.calculator.Calculator.main(Calculator.java:15)
+INFO: Add 1 and 2.
+INFO: Add 1 and 2.
+INFO: Add 1 and 2.
+INFO: Divide 8 to 4.
+INFO: Divide 8 to 4.

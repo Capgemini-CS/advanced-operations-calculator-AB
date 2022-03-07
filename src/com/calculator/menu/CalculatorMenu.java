@@ -16,7 +16,7 @@ import java.util.Scanner;
 public class CalculatorMenu implements CalculatorMenuInterface {
 
     @Override
-    public void show() {
+    public void displayMenu() {
         try {
             chooseOutputMethod(equationResultForChosenInputMethod());
         } catch (IncorrectInputException | DivisionByZeroException | NotEnoughOperatorsException | IOException e) {
